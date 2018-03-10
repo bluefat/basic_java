@@ -1,9 +1,13 @@
 package com.study.redis;
 
+import org.junit.Assert;
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import static java.lang.System.*;
 
 import static org.junit.Assert.*;
 
@@ -11,9 +15,12 @@ public class StudyRedisDataTypeTest {
 
     public static final Jedis jedis = new Jedis("localhost");
 
+    public static void main(String[] args){
+    }
+
     @Test
     public void linkRedis(){
-        System.out.println("连接状态：" + jedis.ping());
+        out.println("连接状态：" + jedis.ping());
     }
 
     @Test
