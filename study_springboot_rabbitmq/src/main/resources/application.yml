@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring_rabbitmq
+  rabbitmq:
+    host: 118.24.111.118
+    port: 5672
+    username: admin
+    password: admin
+  #rabbitmq
+server:
+  port: 8081
+logging:
+  level:
+    com.*: debug
+
